@@ -9,6 +9,12 @@ return [
 	'saludo_perfil' => 'Hello, {0}!',
 	'error' => [
 		'validacion_login' => 'Wrong user or password'
+	],
+	'login' => [
+		'span_correo' => 'Email address',
+		'span_contraseña' => 'Password',
+		'login_enter' => 'Login'	
 	]
+	
 ]
  ?>
