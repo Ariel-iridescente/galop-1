@@ -36,6 +36,7 @@ $routes->get('{locale}/logout','Users::logout');
 $routes->get('{locale}/', 'Pages::index');
 $routes->get('{locale}/blog/create', 'Blog::create');
 $routes->get('{locale}/blog/(:any)', 'Blog::post/$1');
+$routes->match(['get','post'],'{locale}/contacto', 'Contacto::index');
 $routes->match(['get','post'],'{locale}/registro','Users::registro');
 $routes->match(['get','post'],'{locale}/login','Users::index');
 $routes->match(['get','post'],'{locale}/mi-cuenta','Users::perfil');

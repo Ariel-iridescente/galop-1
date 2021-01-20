@@ -13,7 +13,14 @@ return [
 	'login' => [
 		'span_correo' => 'Email address',
 		'span_contraseña' => 'Password',
-		'login_enter' => 'Login'	
+		'enter' => 'Login',
+		'upload_pass' => '¿Olvidaste tu contraseña?'	
+	],
+	'contacto' => [
+		'span_correo' => 'Email address',
+		'span_nombre' => 'Name',
+		'span_mensaje' => 'Message',
+		'enviar' => 'Send'
 	]
 	
 ]

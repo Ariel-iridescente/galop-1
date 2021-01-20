@@ -1,8 +1,8 @@
 <div class="content">
 
 	<form class="form-contacto max-w-top" action="" method="POST">
-		<span><?= lang('App.contacto.span_nombre') ?></span>
-		<input class="name" type="text" name="name">
+		<span ><?= lang('App.contacto.span_nombre') ?></span>
+		<input class="name" type="text" name="name" >
 		<span><?= lang('App.contacto.span_correo') ?></span>
 		<input class="mail" type="text" name="mail">
 		<span><?= lang('App.contacto.span_mensaje') ?></span>

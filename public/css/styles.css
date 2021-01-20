@@ -4,7 +4,9 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,h2,h3,h4,h5,h6,button,input[type=submit],.btn {
@@ -13,6 +15,10 @@ h1,h2,h3,h4,h5,h6,button,input[type=submit],.btn {
 
 li{
     list-style: none;
+}
+
+ul{
+    padding-left: 0;
 }
 
 ::selection {
@@ -210,7 +216,18 @@ a:hover {
     margin-right: 10px;
 }
 
-.form-login{
+.content{
+    display: flex;
+    flex-grow:1;
+}
+
+.full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login, .form-contacto{
     margin: -1rem auto;
     padding: 2rem;
     display: flex;
@@ -220,15 +237,28 @@ a:hover {
     border-radius: 8px;
 }
 
-form .mail,form .password{
-    border: navajowhite;
+.max-w-top{
+    width: 500px;
+    margin-top: 2rem;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+form .mail,form .password, form .name{
+    border: none;
     padding: 8px;
     height: 40px;
     display: flex;
     margin-bottom: .8rem;
 }
 
-form .login{
+.contact-text-area{
+    border: none;
+    margin-bottom: .8rem;
+    height: 100px;
+}
+
+form .login,form .contacto{
     background-color: #f5a014;
     font-size: 1.3rem;
     border-radius: 5px;
@@ -238,27 +268,30 @@ form .login{
     border: none;
 }
 
+form .login:hover,form .contacto:hover{
+    background-color: #c48010;
+}
+
 span,.password{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.max-w{
-    max-width: 800px;
-    margin-top: 2rem;
-}
-
 .button{
     text-align: center;
+    margin-top: 0.7rem;
 }
 
 .errors{
     color:#e34c4c;
 }
 
+.max-w{
+    width: 400px;
+}
+
 @media (max-width: 500px){
-    .form-login {
+    .form-login ,form.form-contacto{
         margin: .8rem .2rem .2rem;
-        padding: 1rem .5rem;
     }
 
 }
