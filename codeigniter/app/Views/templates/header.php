@@ -32,7 +32,7 @@ $uri = service('uri');
 						<a class="nav-link hover_underline" href="/eventos/"><?= lang('App.menu_eventos') ?></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link hover_underline" href="/about/"><?= lang('App.menu_contacto') ?></a>
+						<a class="nav-link hover_underline" href="/contacto/"><?= lang('App.menu_contacto') ?></a>
 					</li>
 				</ul>
 				<ul class="navbar-nav">

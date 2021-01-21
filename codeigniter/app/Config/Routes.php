@@ -36,12 +36,18 @@ $routes->get('/', 'Pages::index');
 //Institucional
 $routes->get('institucional','Institucional::index');
 $routes->get('{locale}/institucional','Institucional::index');
+	//Institucional Subpaginas
+	//Estatuto
+	$routes->get('institucional/(:any)','Institucional::subpaginas/$1');
 //Noticias
 $routes->get('noticias','Noticias::index');
 $routes->get('{locale}/noticias','Noticias::index');
 //Eventos
 $routes->get('eventos','Eventos::index');
 $routes->get('{locale}/eventos','Eventos::index');
+//Contacto
+$routes->get('contacto','Contacto::index');
+$routes->get('{locale}/contacto','Contacto::index');
 //About
 $routes->get('about', 'Pages::showme/about');
 //Posts

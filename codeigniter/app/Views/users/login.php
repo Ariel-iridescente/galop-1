@@ -6,17 +6,21 @@
 	<?php endif ?>
 	
 	<form class="form-login max-w" action="" method="POST">
-		<span><?= lang('App.login.span_correo') ?></span>
-		<input class="mail" type="text" name="mail">
-		<span><?= lang('App.login.span_contraseña') ?></span>
-		<input class="password" type="password" name="password">
+		<label for="">
+			<span><?= lang('App.login.span_correo') ?></span>
+			<input  type="text" name="mail" class="form-input">
+		</label>
+		<label for="">
+			<span><?= lang('App.login.span_contraseña') ?></span>
+			<input type="password" name="password" class="form-input">
+		</label>
 		<?php if (isset($validation)): ?>
 		<div class="errores_form">
 			<?= $validation->listErrors(); ?>
 		</div>
 		<?php endif ?>
 		<div class="button">
-			<input class="login" type="submit" value=<?= lang('App.login.enter') ?>>
+			<input class="form-button" type="submit" value=<?= lang('App.login.enter') ?>>
 		</div>
 	</form>
 

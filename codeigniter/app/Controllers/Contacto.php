@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 
-class Home extends BaseController
+class Contacto extends BaseController
 {
 	public function index()
 	{
@@ -10,10 +10,8 @@ class Home extends BaseController
 		$data['locale'] = $locale;
 
 		echo view('templates/header',$data);
-		echo view('pages/home');
+		echo view('pages/contacto');
 		echo view('templates/footer');
 	}
-
-	//--------------------------------------------------------------------
 
 }

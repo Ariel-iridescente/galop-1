@@ -1,1 +1,3 @@
-<h1>Noticias</h1>
+<div class="container">
+<h1 class="titulo-principal">Noticias</h1>    
+</div>

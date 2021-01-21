@@ -13,7 +13,7 @@ return [
 	'login' => [
 		'span_correo' => 'Correo electronico',
 		'span_contraseña' => 'Contraseña',
-		'enter' => 'Iniciar sesión'	
+		'enter' => 'Acceder'	
 	]
 
 ]

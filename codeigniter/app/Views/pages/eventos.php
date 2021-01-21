@@ -1,1 +1,3 @@
-<h1>Eventos</h1>
+<div class="container">
+    <h1 class="titulo-principal">Eventos</h1>    
+</div>

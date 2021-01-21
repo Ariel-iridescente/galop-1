@@ -192,6 +192,7 @@ section.slide_inicio .jumbotron::before {
     background-color: #d6d6d6;
     color: inherit;
 }
+
 a {
     color: #f5a014;
 }
@@ -199,6 +200,7 @@ a:hover {
     color: #C48010;
     text-decoration: none;
 }
+
 .lang_switcher a {
     padding: .5rem!important;
     display: inline-flex;
@@ -209,6 +211,49 @@ a:hover {
 .lang_switcher {
     margin-right: 10px;
 }
+/* INSTITUCUIONAL  */
+.buttons-right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  
+}
+
+.buttons-right li{
+    background: #c5dfe0;
+    padding: .5rem;
+    margin: .2rem;
+    border-radius: .4rem;   
+}
+
+.buttons-right li:hover{
+    background: #a0cbcd;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttons-right li.active {
+    background-color: #a0cbcd;
+}
+
+.content{
+    display: flex;
+}
+
+.about-left {
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.buttons-right a{
+ color: #000;
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+/* INSTITUCIONAL */
+
+/* LOGIN */
 
 .form-login{
     margin: -1rem auto;
@@ -220,31 +265,14 @@ a:hover {
     border-radius: 8px;
 }
 
-form .mail,form .password{
-    border: navajowhite;
-    padding: 8px;
-    height: 40px;
-    display: flex;
-    margin-bottom: .8rem;
-}
-
-form .login{
-    background-color: #f5a014;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    padding: .2rem 1rem;
-    border: none;
-}
-
-span,.password{
+span{
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .max-w{
-    max-width: 800px;
-    margin-top: 2rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem 1rem;
 }
 
 .button{
@@ -255,12 +283,22 @@ span,.password{
     color:#e34c4c;
 }
 
+/* LOGIN */
+
+.bloque-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .titulo-principal{
     background-color: #F5A014;
     border-radius: 2rem;
     color: #ffff;
     padding: 0.5rem 1rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     display: inline-flex;
     justify-content: center;
     font-size: 2rem;
@@ -291,10 +329,76 @@ span,.password{
     z-index: -1;
 }
 
+/* CONTACTO */
+.form-container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.form-contacto {
+    background-color: #d9eaeb;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.form-input{
+    border:none;
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+    display: flex;
+    margin-bottom: .8rem;
+}
+
+.form-button{
+    background-color: #f5a014;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: .2rem 1rem;
+    border: none;
+}
+
+.form-contacto>label,.form-contacto .form-input{
+    width: 100%;
+}
+
+.form-contacto textarea{
+    height: 130px;
+    resize: none;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    flex-grow: 1;
+}
+/* CONTACTO */
+
+@media(max-width : 770px){
+    /* CONTACTO */
+    .form-container {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 100%;
+        max-width: 500px;
+    }
+        
+}
+
 @media (max-width: 500px){
+    /* LOGIN */
     .form-login {
-        margin: .8rem .2rem .2rem;
-        padding: 1rem .5rem;
+        margin: .8rem .5rem;
+        padding: 1rem;
     }
 
 }

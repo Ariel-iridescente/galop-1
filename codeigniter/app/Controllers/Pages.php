@@ -18,7 +18,7 @@ class Pages extends BaseController
 		echo view('templates/footer');
 	}
 
-	public function showme($page = 'home')
+	public function showme($page = 'institucional')
 	{
 		if (! is_file(APPPATH.'/Views/pages/'.$page.'.php')) {
 			// no existe la pag
