@@ -1,4 +1,4 @@
-<div class="bloque-login">
+<div class="bloque-form">
 	<?php if (session()->get('success')): ?>
 	<div class="success">
 		<?= session()->get('success') ?>

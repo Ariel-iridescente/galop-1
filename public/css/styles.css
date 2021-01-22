@@ -213,11 +213,11 @@ a:hover {
 }
 /* INSTITUCUIONAL  */
 .buttons-right {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     padding-left: 0;
-  
+    text-align: center;
+    width: 250px;
 }
 
 .buttons-right li{
@@ -252,6 +252,79 @@ a:hover {
 }
 
 /* INSTITUCIONAL */
+/* SUBSECCIONES */
+/* MIEMBROS */
+.user-img{
+    background-image: url(https://animapedia.org/wp-content/uploads/2018/07/nutria-e1530713724900.jpg);
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem 0;
+    border: 1px solid #80808047;
+}
+
+.miembros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.miembros-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.miembros-titulo{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.miembros-cargo{
+    font-size: .9rem;
+}
+
+.miembros-content p{
+    font-size: .9rem;
+}
+
+.redes img {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    filter: grayscale(100%);
+}
+/*SLICK*/
+.slick-prev:before {
+    content: '←';
+}
+
+.slick-next:before {
+    content: '→';
+}
+
+.miembros-container .slick-prev:before,.miembros-container .slick-next:before{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color:black;
+    }
+/*SLICK*/
+
+/* MIEMBROS */
+/* SUBSECCIONES */
 
 /* LOGIN */
 
@@ -285,7 +358,7 @@ span{
 
 /* LOGIN */
 
-.bloque-login{
+.bloque-form{
     display: flex;
     flex-direction: column;
     justify-content: center;

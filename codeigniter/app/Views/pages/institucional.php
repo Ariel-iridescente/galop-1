@@ -16,10 +16,7 @@
 				<a href="/institucional/estatuto">Estatuto</a>
 			</li>
 			<li class="">
-				<a href="/institucional/acta">Acta Asamblea</a>
-			</li>
-			<li class="">
-				<a href="/institucional/delegados">Delegados por Paises</a>
+				<a href="/institucional/miembros">Miembros</a>
 			</li>
 			<li class="">
 				<a href="/institucional/comites">Comites</a>

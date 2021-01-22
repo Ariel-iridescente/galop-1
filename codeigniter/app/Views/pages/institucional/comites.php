@@ -16,9 +16,6 @@
 			<a href="/institucional/estatuto">Estatuto</a>
 		</li>
 		<li class="">
-			<a href="/institucional/acta">Acta Asamblea</a>
-		</li>
-		<li class="">
 			<a href="/institucional/mienbros">Miembros</a>
 		</li>
 		<li class="active">
